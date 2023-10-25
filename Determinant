@@ -13,7 +13,6 @@ def determinant(matrix):
                         new_det.append(matrix[i][j])
                 new_det2.append(new_det)
                 new_det = []
-            print(new_det2)
             new_det2 = new_det2[1:]
             if k == 0 or k%2 == 0:
                 resultado += matrix[0][k] * determinant(new_det2)
